@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Celestial Stats</title>
+	<base href="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/semantic/semantic.min.css">
+	<script src="/assets/semantic/semantic.min.js"></script>
+	<script type="text/javascript">
+		// Just until I figure out where this stuff is supposed to go...
+		$(document).ready(function() {
+			$('.ui.accordion').accordion({
+				exclusive: false
+			});
+			var content = [
+				{ title: 'Genji' }, { title: 'McCree' }, { title: 'Pharah' },
+				{ title: 'Reaper' }, { title: 'Soldier: 76' }, { title: 'Sombra' },
+				{ title: 'Tracer' }, { title: 'Bastion' }, { title: 'Hanzo' },
+				{ title: 'Junkrat' }, { title: 'Mei' }, { title: 'Torbjörn' },
+				{ title: 'Widowmaker' }, { title: 'D.Va' }, { title: 'Reinhardt' },
+				{ title: 'Roadhog' }, { title: 'Winston' }, { title: 'Zarya' },
+				{ title: 'Ana' }, { title: 'Lúcio' }, { title: 'Mercy' },
+				{ title: 'Symmetra' }, { title: 'Zenyatta' }
+			];
+			$('.ui.search').search({
+				source: content
+			});
+			$('#navbar #login_button').click(function(){
+				$('#login-modal').modal('show');
+			});
+			$('#navbar #register_button').click(function(){
+				$('#registration-modal').modal('show');
+			});
+		});
+	</script>
+</head>
+<body>
+	<app-root>Loading...</app-root>
+</body>
+</html>

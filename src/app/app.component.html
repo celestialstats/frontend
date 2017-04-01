@@ -1,0 +1,66 @@
+<div class="ui vertical sidebar left visible" id="navbar">
+	<div class="ui top attached header" style="text-align:center;" >
+		<a href="/"><img src="/assets/img/high-res-full-lighter.png" width="175px" height="111px" /></a>
+		<br />
+		<a href="/"><b>Celestial Stats</b></a>
+	</div>
+	<div class="ui attached segment" id="search_cat">
+		<div class="ui icon input search" id="search">
+			<input class="prompt" type="text" placeholder="Search...">
+			<i class="inverted circular search link icon"></i>
+			<div class="results"></div>
+		</div>
+	</div>
+	<div class="ui attached segment">
+		<div class="ui vertical accordion menu fluid">
+			<div class="item">
+				<div class="title">
+					<i class="dropdown icon"></i> Main
+				</div>
+				<div class="content ui segments">
+					<div class="ui segment">Home</div>
+					<div class="ui segment">How It Works</div>
+					<div class="ui segment">About</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="title">
+					<i class="dropdown icon"></i> Chat Systems
+				</div>
+				<div class="content ui segments">
+					<div class="ui segment">Discord</div>
+					<div class="ui segment">Slack</div>
+					<div class="ui segment">Gitter</div>
+					<div class="ui segment">IRC</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="title">
+					<i class="dropdown icon"></i> Profile
+				</div>
+				<div class="content ui segments">
+					<div class="ui segment">View</div>
+					<div class="ui segment">Edit</div>
+					<div class="ui segment">Share</div>
+					<div class="ui segment">Privacy</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui attached segment" id="loginregbox">
+		<div class="ui medium buttons">
+			<button class="ui button" id="login_button">Login</button>
+			<div class="or"></div>
+			<button class="ui button" id="register_button">Register</button>
+		</div>
+	</div>
+</div>
+<div class="pusher">
+	<div class="container">
+		<router-outlet></router-outlet>
+	</div>
+</div>
+<!-- Figure out a way to make this conditional if we're not logged in. -->
+<app-user-register></app-user-register>
+<!-- Figure out a way to make this conditional if we're not logged in. -->
+<app-user-login></app-user-login>

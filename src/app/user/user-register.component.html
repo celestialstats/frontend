@@ -1,0 +1,39 @@
+<div class="ui modal" id="registration-modal">
+	<i class="close icon"></i>
+	<div class="header">
+		Registration
+	</div>
+	<div class="content">
+		<form class="ui form" id="registration-form">
+			<div class="field">
+				<label>Email</label>
+				<input type="text" name="email" placeholder="mako@hogwild.com">
+			</div>
+			<div class="field">
+				<label>Password</label>
+				<div class="ui pointing below label">
+					<p>Must be at least 8 characters. No crazy rules!</p>
+				</div>
+				<input type="password" name="password" placeholder="Password">
+				<input type="password" name="password-confirm" placeholder="Confirm Password">
+			</div>
+			<div class="field">
+				<label>Display Name</label>
+				<div class="ui pointing below label">
+					<p>Your Display Name doesn't have to be unique! Others will see what you enter below, but we'll add a hidden number to the end. Example: Roadhog#1720</p>
+				</div>
+				<input type="text" name="display-name" placeholder="Roadhog">
+			</div>
+			<div class="field">
+				<div class="ui checkbox">
+					<input type="checkbox" tabindex="0" class="hidden">
+					<label>I agree to the Terms and Conditions</label>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="actions">
+		<div class="ui cancel button">Cancel</div>
+		<button class="ui button" type="submit" form="registration-form">Register</button>
+	</div>
+</div>
